@@ -1,0 +1,28 @@
+{
+  "name": "expressservertemplate",
+  "version": "1.0.0",
+  "description": "template for node server with express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-scss": "node-sass ./public/scss -o ./public/css",
+    "watch-scss": "node-sass --watch ./public/scss -o ./public/css",
+    "server": "node app.js",
+    "start": "npm-run-all -l -p build-scss watch-scss server "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonrakovic/ExpressServerTemplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simonrakovic/ExpressServerTemplate/issues"
+  },
+  "homepage": "https://github.com/simonrakovic/ExpressServerTemplate#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-sass": "^5.0.0",
+    "sass": "^1.29.0"
+  }
+}
